@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_fic7_app/pages/dashboard/dashboard_page.dart';
 
 import '../../../utils/color_resources.dart';
 import '../../../utils/custom_themes.dart';
@@ -125,7 +126,12 @@ class SignInWidgetState extends State<SignInWidget> {
                     style: titilliumRegular.copyWith(
                         fontSize: Dimensions.fontSizeDefault))),
             GestureDetector(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) {
+                  return DashboardPage();
+                }));
+              },
               child: Container(
                 margin: const EdgeInsets.only(
                     left: Dimensions.marginSizeAuth,

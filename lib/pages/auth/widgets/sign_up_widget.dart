@@ -6,6 +6,7 @@ import '../../../utils/dimensions.dart';
 import '../../base_widgets/button/custom_button.dart';
 import '../../base_widgets/text_field/custom_password_textfield.dart';
 import '../../base_widgets/text_field/custom_textfield.dart';
+import '../../dashboard/dashboard_page.dart';
 
 class SignUpWidget extends StatefulWidget {
   const SignUpWidget({Key? key}) : super(key: key);
@@ -133,7 +134,12 @@ class SignUpWidgetState extends State<SignUpWidget> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushAndRemoveUntil(context,
+                    MaterialPageRoute(builder: (context) {
+                  return const DashboardPage();
+                }), (route) => false);
+                },
                 child: Text('Skip for Now',
                     style: titilliumRegular.copyWith(
                         fontSize: Dimensions.fontSizeDefault,
