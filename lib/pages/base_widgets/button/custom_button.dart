@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../utils/custom_themes.dart';
-import '../../../utils/dimensions.dart';
+import '../../utils/custom_themes.dart';
+import '../../utils/dimensions.dart';
 
 class CustomButton extends StatelessWidget {
   final Function? onTap;

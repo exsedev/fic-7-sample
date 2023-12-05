@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../utils/color_resources.dart';
+import '../../utils/color_resources.dart';
 
 
 class SplashPainter extends CustomPainter {

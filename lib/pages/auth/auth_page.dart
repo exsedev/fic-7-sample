@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-
-import '../../utils/color_resources.dart';
-import '../../utils/custom_themes.dart';
-import '../../utils/dimensions.dart';
-import '../../utils/images.dart';
-import 'widgets/sign_in_widget.dart';
-import 'widgets/sign_up_widget.dart';
+import 'package:flutter_fic7_app/pages/auth/widgets/sign_in_widget.dart';
+import 'package:flutter_fic7_app/pages/auth/widgets/sign_up_widget.dart';
+import 'package:flutter_fic7_app/pages/utils/color_resources.dart';
+import 'package:flutter_fic7_app/pages/utils/custom_themes.dart';
+import 'package:flutter_fic7_app/pages/utils/dimensions.dart';
+import 'package:flutter_fic7_app/pages/utils/images.dart';
 
 class AuthPage extends StatefulWidget {
   final int initialPage;
@@ -21,7 +20,6 @@ class _AuthPageState extends State<AuthPage> {
   Widget build(BuildContext context) {
     PageController pageController =
         PageController(initialPage: widget.initialPage);
-
     return Scaffold(
       body: Stack(
         clipBehavior: Clip.none,
@@ -37,7 +35,11 @@ class _AuthPageState extends State<AuthPage> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 const SizedBox(height: Dimensions.topSpace),
-                Image.asset(Images.logoWithNameImage, height: 150, width: 200),
+                Image.asset(
+                  Images.logoWithNameImage,
+                  height: 150,
+                  width: 200,
+                ),
                 Padding(
                   padding: const EdgeInsets.all(Dimensions.marginSizeLarge),
                   child: Stack(
@@ -45,7 +47,7 @@ class _AuthPageState extends State<AuthPage> {
                     children: [
                       Positioned(
                         bottom: 0,
-                        right: Dimensions.marginSizeExtraSmall,
+                        right: Dimensions.marginSizeLarge,
                         left: 0,
                         child: Container(
                           width: MediaQuery.of(context).size.width,
@@ -61,39 +63,42 @@ class _AuthPageState extends State<AuthPage> {
                                 curve: Curves.easeInOut),
                             child: Column(
                               children: [
-                                Text('Sigin',
+                                Text('Signin',
                                     style: isLoginPage
                                         ? titilliumSemiBold
                                         : titilliumRegular),
                                 Container(
-                                    height: 1,
-                                    width: 40,
-                                    margin: const EdgeInsets.only(top: 8),
-                                    color: isLoginPage
-                                        ? Theme.of(context).primaryColor
-                                        : Colors.transparent),
+                                  height: 1,
+                                  width: 40,
+                                  margin: const EdgeInsets.only(top: 8),
+                                  color: isLoginPage
+                                      ? Theme.of(context).primaryColor
+                                      : Colors.transparent,
+                                ),
                               ],
                             ),
                           ),
                           const SizedBox(
-                              width: Dimensions.paddingSizeExtraLarge),
+                            width: Dimensions.paddingSizeExtraLarge,
+                          ),
                           InkWell(
                             onTap: () => pageController.animateToPage(1,
                                 duration: const Duration(seconds: 1),
                                 curve: Curves.easeInOut),
                             child: Column(
                               children: [
-                                Text('Signup',
+                                Text('SignUp',
                                     style: !isLoginPage
                                         ? titilliumSemiBold
                                         : titilliumRegular),
                                 Container(
-                                    height: 1,
-                                    width: 50,
-                                    margin: const EdgeInsets.only(top: 8),
-                                    color: !isLoginPage
-                                        ? Theme.of(context).primaryColor
-                                        : Colors.transparent),
+                                  height: 1,
+                                  width: 50,
+                                  margin: const EdgeInsets.only(top: 8),
+                                  color: !isLoginPage
+                                      ? Theme.of(context).primaryColor
+                                      : Colors.transparent,
+                                ),
                               ],
                             ),
                           ),
@@ -109,7 +114,7 @@ class _AuthPageState extends State<AuthPage> {
                     itemBuilder: (context, index) {
                       if (isLoginPage) {
                         return const SignInWidget();
-                      } else {
+                      }else{
                         return const SignUpWidget();
                       }
                     },
@@ -119,7 +124,7 @@ class _AuthPageState extends State<AuthPage> {
                       });
                     },
                   ),
-                ),
+                )
               ],
             ),
           ),

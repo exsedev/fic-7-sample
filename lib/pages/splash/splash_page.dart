@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../utils/color_resources.dart';
-import '../../utils/images.dart';
+import '../utils/color_resources.dart';
+import '../utils/images.dart';
 import 'widgets/splash_painter.dart';
 
 
