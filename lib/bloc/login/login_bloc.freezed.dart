@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'register_bloc.dart';
+part of 'login_bloc.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,58 +15,58 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
-mixin _$RegisterEvent {
+mixin _$LoginEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() started,
-    required TResult Function(RegisterRequestModel model) register,
+    required TResult Function(dynamic LoginRequestModel) login,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? started,
-    TResult? Function(RegisterRequestModel model)? register,
+    TResult? Function(dynamic LoginRequestModel)? login,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? started,
-    TResult Function(RegisterRequestModel model)? register,
+    TResult Function(dynamic LoginRequestModel)? login,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Started value) started,
-    required TResult Function(_Register value) register,
+    required TResult Function(_Login value) login,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Started value)? started,
-    TResult? Function(_Register value)? register,
+    TResult? Function(_Login value)? login,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Started value)? started,
-    TResult Function(_Register value)? register,
+    TResult Function(_Login value)? login,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $RegisterEventCopyWith<$Res> {
-  factory $RegisterEventCopyWith(
-          RegisterEvent value, $Res Function(RegisterEvent) then) =
-      _$RegisterEventCopyWithImpl<$Res, RegisterEvent>;
+abstract class $LoginEventCopyWith<$Res> {
+  factory $LoginEventCopyWith(
+          LoginEvent value, $Res Function(LoginEvent) then) =
+      _$LoginEventCopyWithImpl<$Res, LoginEvent>;
 }
 
 /// @nodoc
-class _$RegisterEventCopyWithImpl<$Res, $Val extends RegisterEvent>
-    implements $RegisterEventCopyWith<$Res> {
-  _$RegisterEventCopyWithImpl(this._value, this._then);
+class _$LoginEventCopyWithImpl<$Res, $Val extends LoginEvent>
+    implements $LoginEventCopyWith<$Res> {
+  _$LoginEventCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -83,7 +83,7 @@ abstract class _$$StartedImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$StartedImplCopyWithImpl<$Res>
-    extends _$RegisterEventCopyWithImpl<$Res, _$StartedImpl>
+    extends _$LoginEventCopyWithImpl<$Res, _$StartedImpl>
     implements _$$StartedImplCopyWith<$Res> {
   __$$StartedImplCopyWithImpl(
       _$StartedImpl _value, $Res Function(_$StartedImpl) _then)
@@ -92,18 +92,12 @@ class __$$StartedImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$StartedImpl with DiagnosticableTreeMixin implements _Started {
+class _$StartedImpl implements _Started {
   const _$StartedImpl();
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'RegisterEvent.started()';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties.add(DiagnosticsProperty('type', 'RegisterEvent.started'));
+  String toString() {
+    return 'LoginEvent.started()';
   }
 
   @override
@@ -119,7 +113,7 @@ class _$StartedImpl with DiagnosticableTreeMixin implements _Started {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() started,
-    required TResult Function(RegisterRequestModel model) register,
+    required TResult Function(dynamic LoginRequestModel) login,
   }) {
     return started();
   }
@@ -128,7 +122,7 @@ class _$StartedImpl with DiagnosticableTreeMixin implements _Started {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? started,
-    TResult? Function(RegisterRequestModel model)? register,
+    TResult? Function(dynamic LoginRequestModel)? login,
   }) {
     return started?.call();
   }
@@ -137,7 +131,7 @@ class _$StartedImpl with DiagnosticableTreeMixin implements _Started {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? started,
-    TResult Function(RegisterRequestModel model)? register,
+    TResult Function(dynamic LoginRequestModel)? login,
     required TResult orElse(),
   }) {
     if (started != null) {
@@ -150,7 +144,7 @@ class _$StartedImpl with DiagnosticableTreeMixin implements _Started {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Started value) started,
-    required TResult Function(_Register value) register,
+    required TResult Function(_Login value) login,
   }) {
     return started(this);
   }
@@ -159,7 +153,7 @@ class _$StartedImpl with DiagnosticableTreeMixin implements _Started {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Started value)? started,
-    TResult? Function(_Register value)? register,
+    TResult? Function(_Login value)? login,
   }) {
     return started?.call(this);
   }
@@ -168,7 +162,7 @@ class _$StartedImpl with DiagnosticableTreeMixin implements _Started {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Started value)? started,
-    TResult Function(_Register value)? register,
+    TResult Function(_Login value)? login,
     required TResult orElse(),
   }) {
     if (started != null) {
@@ -178,106 +172,99 @@ class _$StartedImpl with DiagnosticableTreeMixin implements _Started {
   }
 }
 
-abstract class _Started implements RegisterEvent {
+abstract class _Started implements LoginEvent {
   const factory _Started() = _$StartedImpl;
 }
 
 /// @nodoc
-abstract class _$$RegisterImplCopyWith<$Res> {
-  factory _$$RegisterImplCopyWith(
-          _$RegisterImpl value, $Res Function(_$RegisterImpl) then) =
-      __$$RegisterImplCopyWithImpl<$Res>;
+abstract class _$$LoginImplCopyWith<$Res> {
+  factory _$$LoginImplCopyWith(
+          _$LoginImpl value, $Res Function(_$LoginImpl) then) =
+      __$$LoginImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({RegisterRequestModel model});
+  $Res call({dynamic LoginRequestModel});
 }
 
 /// @nodoc
-class __$$RegisterImplCopyWithImpl<$Res>
-    extends _$RegisterEventCopyWithImpl<$Res, _$RegisterImpl>
-    implements _$$RegisterImplCopyWith<$Res> {
-  __$$RegisterImplCopyWithImpl(
-      _$RegisterImpl _value, $Res Function(_$RegisterImpl) _then)
+class __$$LoginImplCopyWithImpl<$Res>
+    extends _$LoginEventCopyWithImpl<$Res, _$LoginImpl>
+    implements _$$LoginImplCopyWith<$Res> {
+  __$$LoginImplCopyWithImpl(
+      _$LoginImpl _value, $Res Function(_$LoginImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? model = null,
+    Object? LoginRequestModel = freezed,
   }) {
-    return _then(_$RegisterImpl(
-      null == model
-          ? _value.model
-          : model // ignore: cast_nullable_to_non_nullable
-              as RegisterRequestModel,
+    return _then(_$LoginImpl(
+      freezed == LoginRequestModel
+          ? _value.LoginRequestModel!
+          : LoginRequestModel,
     ));
   }
 }
 
 /// @nodoc
 
-class _$RegisterImpl with DiagnosticableTreeMixin implements _Register {
-  const _$RegisterImpl(this.model);
+class _$LoginImpl implements _Login {
+  const _$LoginImpl(this.LoginRequestModel);
 
   @override
-  final RegisterRequestModel model;
+  final dynamic LoginRequestModel;
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'RegisterEvent.register(model: $model)';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties
-      ..add(DiagnosticsProperty('type', 'RegisterEvent.register'))
-      ..add(DiagnosticsProperty('model', model));
+  String toString() {
+    return 'LoginEvent.login(LoginRequestModel: $LoginRequestModel)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$RegisterImpl &&
-            (identical(other.model, model) || other.model == model));
+            other is _$LoginImpl &&
+            const DeepCollectionEquality()
+                .equals(other.LoginRequestModel, LoginRequestModel));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, model);
+  int get hashCode => Object.hash(
+      runtimeType, const DeepCollectionEquality().hash(LoginRequestModel));
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$RegisterImplCopyWith<_$RegisterImpl> get copyWith =>
-      __$$RegisterImplCopyWithImpl<_$RegisterImpl>(this, _$identity);
+  _$$LoginImplCopyWith<_$LoginImpl> get copyWith =>
+      __$$LoginImplCopyWithImpl<_$LoginImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() started,
-    required TResult Function(RegisterRequestModel model) register,
+    required TResult Function(dynamic LoginRequestModel) login,
   }) {
-    return register(model);
+    return login(LoginRequestModel);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? started,
-    TResult? Function(RegisterRequestModel model)? register,
+    TResult? Function(dynamic LoginRequestModel)? login,
   }) {
-    return register?.call(model);
+    return login?.call(LoginRequestModel);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? started,
-    TResult Function(RegisterRequestModel model)? register,
+    TResult Function(dynamic LoginRequestModel)? login,
     required TResult orElse(),
   }) {
-    if (register != null) {
-      return register(model);
+    if (login != null) {
+      return login(LoginRequestModel);
     }
     return orElse();
   }
@@ -286,67 +273,67 @@ class _$RegisterImpl with DiagnosticableTreeMixin implements _Register {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Started value) started,
-    required TResult Function(_Register value) register,
+    required TResult Function(_Login value) login,
   }) {
-    return register(this);
+    return login(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Started value)? started,
-    TResult? Function(_Register value)? register,
+    TResult? Function(_Login value)? login,
   }) {
-    return register?.call(this);
+    return login?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Started value)? started,
-    TResult Function(_Register value)? register,
+    TResult Function(_Login value)? login,
     required TResult orElse(),
   }) {
-    if (register != null) {
-      return register(this);
+    if (login != null) {
+      return login(this);
     }
     return orElse();
   }
 }
 
-abstract class _Register implements RegisterEvent {
-  const factory _Register(final RegisterRequestModel model) = _$RegisterImpl;
+abstract class _Login implements LoginEvent {
+  const factory _Login(final dynamic LoginRequestModel) = _$LoginImpl;
 
-  RegisterRequestModel get model;
+  dynamic get LoginRequestModel;
   @JsonKey(ignore: true)
-  _$$RegisterImplCopyWith<_$RegisterImpl> get copyWith =>
+  _$$LoginImplCopyWith<_$LoginImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-mixin _$RegisterState {
+mixin _$LoginState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(AuthResponseModel model) loaded,
-    required TResult Function(String message) error,
+    required TResult Function(AuthResponseModel data) loaded,
+    required TResult Function() err0r,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(AuthResponseModel model)? loaded,
-    TResult? Function(String message)? error,
+    TResult? Function(AuthResponseModel data)? loaded,
+    TResult? Function()? err0r,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(AuthResponseModel model)? loaded,
-    TResult Function(String message)? error,
+    TResult Function(AuthResponseModel data)? loaded,
+    TResult Function()? err0r,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -355,7 +342,7 @@ mixin _$RegisterState {
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
     required TResult Function(_Loaded value) loaded,
-    required TResult Function(_Error value) error,
+    required TResult Function(_Error value) err0r,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -363,7 +350,7 @@ mixin _$RegisterState {
     TResult? Function(_Initial value)? initial,
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Loaded value)? loaded,
-    TResult? Function(_Error value)? error,
+    TResult? Function(_Error value)? err0r,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -371,23 +358,23 @@ mixin _$RegisterState {
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
     TResult Function(_Loaded value)? loaded,
-    TResult Function(_Error value)? error,
+    TResult Function(_Error value)? err0r,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $RegisterStateCopyWith<$Res> {
-  factory $RegisterStateCopyWith(
-          RegisterState value, $Res Function(RegisterState) then) =
-      _$RegisterStateCopyWithImpl<$Res, RegisterState>;
+abstract class $LoginStateCopyWith<$Res> {
+  factory $LoginStateCopyWith(
+          LoginState value, $Res Function(LoginState) then) =
+      _$LoginStateCopyWithImpl<$Res, LoginState>;
 }
 
 /// @nodoc
-class _$RegisterStateCopyWithImpl<$Res, $Val extends RegisterState>
-    implements $RegisterStateCopyWith<$Res> {
-  _$RegisterStateCopyWithImpl(this._value, this._then);
+class _$LoginStateCopyWithImpl<$Res, $Val extends LoginState>
+    implements $LoginStateCopyWith<$Res> {
+  _$LoginStateCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -404,7 +391,7 @@ abstract class _$$InitialImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$InitialImplCopyWithImpl<$Res>
-    extends _$RegisterStateCopyWithImpl<$Res, _$InitialImpl>
+    extends _$LoginStateCopyWithImpl<$Res, _$InitialImpl>
     implements _$$InitialImplCopyWith<$Res> {
   __$$InitialImplCopyWithImpl(
       _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
@@ -413,18 +400,12 @@ class __$$InitialImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
+class _$InitialImpl implements _Initial {
   const _$InitialImpl();
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'RegisterState.initial()';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties.add(DiagnosticsProperty('type', 'RegisterState.initial'));
+  String toString() {
+    return 'LoginState.initial()';
   }
 
   @override
@@ -441,8 +422,8 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(AuthResponseModel model) loaded,
-    required TResult Function(String message) error,
+    required TResult Function(AuthResponseModel data) loaded,
+    required TResult Function() err0r,
   }) {
     return initial();
   }
@@ -452,8 +433,8 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(AuthResponseModel model)? loaded,
-    TResult? Function(String message)? error,
+    TResult? Function(AuthResponseModel data)? loaded,
+    TResult? Function()? err0r,
   }) {
     return initial?.call();
   }
@@ -463,8 +444,8 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(AuthResponseModel model)? loaded,
-    TResult Function(String message)? error,
+    TResult Function(AuthResponseModel data)? loaded,
+    TResult Function()? err0r,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -479,7 +460,7 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
     required TResult Function(_Loaded value) loaded,
-    required TResult Function(_Error value) error,
+    required TResult Function(_Error value) err0r,
   }) {
     return initial(this);
   }
@@ -490,7 +471,7 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
     TResult? Function(_Initial value)? initial,
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Loaded value)? loaded,
-    TResult? Function(_Error value)? error,
+    TResult? Function(_Error value)? err0r,
   }) {
     return initial?.call(this);
   }
@@ -501,7 +482,7 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
     TResult Function(_Loaded value)? loaded,
-    TResult Function(_Error value)? error,
+    TResult Function(_Error value)? err0r,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -511,7 +492,7 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
   }
 }
 
-abstract class _Initial implements RegisterState {
+abstract class _Initial implements LoginState {
   const factory _Initial() = _$InitialImpl;
 }
 
@@ -524,7 +505,7 @@ abstract class _$$LoadingImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$LoadingImplCopyWithImpl<$Res>
-    extends _$RegisterStateCopyWithImpl<$Res, _$LoadingImpl>
+    extends _$LoginStateCopyWithImpl<$Res, _$LoadingImpl>
     implements _$$LoadingImplCopyWith<$Res> {
   __$$LoadingImplCopyWithImpl(
       _$LoadingImpl _value, $Res Function(_$LoadingImpl) _then)
@@ -533,18 +514,12 @@ class __$$LoadingImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$LoadingImpl with DiagnosticableTreeMixin implements _Loading {
+class _$LoadingImpl implements _Loading {
   const _$LoadingImpl();
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'RegisterState.loading()';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties.add(DiagnosticsProperty('type', 'RegisterState.loading'));
+  String toString() {
+    return 'LoginState.loading()';
   }
 
   @override
@@ -561,8 +536,8 @@ class _$LoadingImpl with DiagnosticableTreeMixin implements _Loading {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(AuthResponseModel model) loaded,
-    required TResult Function(String message) error,
+    required TResult Function(AuthResponseModel data) loaded,
+    required TResult Function() err0r,
   }) {
     return loading();
   }
@@ -572,8 +547,8 @@ class _$LoadingImpl with DiagnosticableTreeMixin implements _Loading {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(AuthResponseModel model)? loaded,
-    TResult? Function(String message)? error,
+    TResult? Function(AuthResponseModel data)? loaded,
+    TResult? Function()? err0r,
   }) {
     return loading?.call();
   }
@@ -583,8 +558,8 @@ class _$LoadingImpl with DiagnosticableTreeMixin implements _Loading {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(AuthResponseModel model)? loaded,
-    TResult Function(String message)? error,
+    TResult Function(AuthResponseModel data)? loaded,
+    TResult Function()? err0r,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -599,7 +574,7 @@ class _$LoadingImpl with DiagnosticableTreeMixin implements _Loading {
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
     required TResult Function(_Loaded value) loaded,
-    required TResult Function(_Error value) error,
+    required TResult Function(_Error value) err0r,
   }) {
     return loading(this);
   }
@@ -610,7 +585,7 @@ class _$LoadingImpl with DiagnosticableTreeMixin implements _Loading {
     TResult? Function(_Initial value)? initial,
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Loaded value)? loaded,
-    TResult? Function(_Error value)? error,
+    TResult? Function(_Error value)? err0r,
   }) {
     return loading?.call(this);
   }
@@ -621,7 +596,7 @@ class _$LoadingImpl with DiagnosticableTreeMixin implements _Loading {
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
     TResult Function(_Loaded value)? loaded,
-    TResult Function(_Error value)? error,
+    TResult Function(_Error value)? err0r,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -631,7 +606,7 @@ class _$LoadingImpl with DiagnosticableTreeMixin implements _Loading {
   }
 }
 
-abstract class _Loading implements RegisterState {
+abstract class _Loading implements LoginState {
   const factory _Loading() = _$LoadingImpl;
 }
 
@@ -641,12 +616,12 @@ abstract class _$$LoadedImplCopyWith<$Res> {
           _$LoadedImpl value, $Res Function(_$LoadedImpl) then) =
       __$$LoadedImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({AuthResponseModel model});
+  $Res call({AuthResponseModel data});
 }
 
 /// @nodoc
 class __$$LoadedImplCopyWithImpl<$Res>
-    extends _$RegisterStateCopyWithImpl<$Res, _$LoadedImpl>
+    extends _$LoginStateCopyWithImpl<$Res, _$LoadedImpl>
     implements _$$LoadedImplCopyWith<$Res> {
   __$$LoadedImplCopyWithImpl(
       _$LoadedImpl _value, $Res Function(_$LoadedImpl) _then)
@@ -655,12 +630,12 @@ class __$$LoadedImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? model = null,
+    Object? data = null,
   }) {
     return _then(_$LoadedImpl(
-      null == model
-          ? _value.model
-          : model // ignore: cast_nullable_to_non_nullable
+      null == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
               as AuthResponseModel,
     ));
   }
@@ -668,23 +643,15 @@ class __$$LoadedImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$LoadedImpl with DiagnosticableTreeMixin implements _Loaded {
-  const _$LoadedImpl(this.model);
+class _$LoadedImpl implements _Loaded {
+  const _$LoadedImpl(this.data);
 
   @override
-  final AuthResponseModel model;
+  final AuthResponseModel data;
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'RegisterState.loaded(model: $model)';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties
-      ..add(DiagnosticsProperty('type', 'RegisterState.loaded'))
-      ..add(DiagnosticsProperty('model', model));
+  String toString() {
+    return 'LoginState.loaded(data: $data)';
   }
 
   @override
@@ -692,11 +659,11 @@ class _$LoadedImpl with DiagnosticableTreeMixin implements _Loaded {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$LoadedImpl &&
-            (identical(other.model, model) || other.model == model));
+            (identical(other.data, data) || other.data == data));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, model);
+  int get hashCode => Object.hash(runtimeType, data);
 
   @JsonKey(ignore: true)
   @override
@@ -709,10 +676,10 @@ class _$LoadedImpl with DiagnosticableTreeMixin implements _Loaded {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(AuthResponseModel model) loaded,
-    required TResult Function(String message) error,
+    required TResult Function(AuthResponseModel data) loaded,
+    required TResult Function() err0r,
   }) {
-    return loaded(model);
+    return loaded(data);
   }
 
   @override
@@ -720,10 +687,10 @@ class _$LoadedImpl with DiagnosticableTreeMixin implements _Loaded {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(AuthResponseModel model)? loaded,
-    TResult? Function(String message)? error,
+    TResult? Function(AuthResponseModel data)? loaded,
+    TResult? Function()? err0r,
   }) {
-    return loaded?.call(model);
+    return loaded?.call(data);
   }
 
   @override
@@ -731,12 +698,12 @@ class _$LoadedImpl with DiagnosticableTreeMixin implements _Loaded {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(AuthResponseModel model)? loaded,
-    TResult Function(String message)? error,
+    TResult Function(AuthResponseModel data)? loaded,
+    TResult Function()? err0r,
     required TResult orElse(),
   }) {
     if (loaded != null) {
-      return loaded(model);
+      return loaded(data);
     }
     return orElse();
   }
@@ -747,7 +714,7 @@ class _$LoadedImpl with DiagnosticableTreeMixin implements _Loaded {
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
     required TResult Function(_Loaded value) loaded,
-    required TResult Function(_Error value) error,
+    required TResult Function(_Error value) err0r,
   }) {
     return loaded(this);
   }
@@ -758,7 +725,7 @@ class _$LoadedImpl with DiagnosticableTreeMixin implements _Loaded {
     TResult? Function(_Initial value)? initial,
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Loaded value)? loaded,
-    TResult? Function(_Error value)? error,
+    TResult? Function(_Error value)? err0r,
   }) {
     return loaded?.call(this);
   }
@@ -769,7 +736,7 @@ class _$LoadedImpl with DiagnosticableTreeMixin implements _Loaded {
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
     TResult Function(_Loaded value)? loaded,
-    TResult Function(_Error value)? error,
+    TResult Function(_Error value)? err0r,
     required TResult orElse(),
   }) {
     if (loaded != null) {
@@ -779,10 +746,10 @@ class _$LoadedImpl with DiagnosticableTreeMixin implements _Loaded {
   }
 }
 
-abstract class _Loaded implements RegisterState {
-  const factory _Loaded(final AuthResponseModel model) = _$LoadedImpl;
+abstract class _Loaded implements LoginState {
+  const factory _Loaded(final AuthResponseModel data) = _$LoadedImpl;
 
-  AuthResponseModel get model;
+  AuthResponseModel get data;
   @JsonKey(ignore: true)
   _$$LoadedImplCopyWith<_$LoadedImpl> get copyWith =>
       throw _privateConstructorUsedError;
@@ -793,79 +760,45 @@ abstract class _$$ErrorImplCopyWith<$Res> {
   factory _$$ErrorImplCopyWith(
           _$ErrorImpl value, $Res Function(_$ErrorImpl) then) =
       __$$ErrorImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call({String message});
 }
 
 /// @nodoc
 class __$$ErrorImplCopyWithImpl<$Res>
-    extends _$RegisterStateCopyWithImpl<$Res, _$ErrorImpl>
+    extends _$LoginStateCopyWithImpl<$Res, _$ErrorImpl>
     implements _$$ErrorImplCopyWith<$Res> {
   __$$ErrorImplCopyWithImpl(
       _$ErrorImpl _value, $Res Function(_$ErrorImpl) _then)
       : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? message = null,
-  }) {
-    return _then(_$ErrorImpl(
-      null == message
-          ? _value.message
-          : message // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
 }
 
 /// @nodoc
 
-class _$ErrorImpl with DiagnosticableTreeMixin implements _Error {
-  const _$ErrorImpl(this.message);
+class _$ErrorImpl implements _Error {
+  const _$ErrorImpl();
 
   @override
-  final String message;
-
-  @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'RegisterState.error(message: $message)';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties
-      ..add(DiagnosticsProperty('type', 'RegisterState.error'))
-      ..add(DiagnosticsProperty('message', message));
+  String toString() {
+    return 'LoginState.err0r()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$ErrorImpl &&
-            (identical(other.message, message) || other.message == message));
+        (other.runtimeType == runtimeType && other is _$ErrorImpl);
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, message);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$ErrorImplCopyWith<_$ErrorImpl> get copyWith =>
-      __$$ErrorImplCopyWithImpl<_$ErrorImpl>(this, _$identity);
+  int get hashCode => runtimeType.hashCode;
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(AuthResponseModel model) loaded,
-    required TResult Function(String message) error,
+    required TResult Function(AuthResponseModel data) loaded,
+    required TResult Function() err0r,
   }) {
-    return error(message);
+    return err0r();
   }
 
   @override
@@ -873,10 +806,10 @@ class _$ErrorImpl with DiagnosticableTreeMixin implements _Error {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(AuthResponseModel model)? loaded,
-    TResult? Function(String message)? error,
+    TResult? Function(AuthResponseModel data)? loaded,
+    TResult? Function()? err0r,
   }) {
-    return error?.call(message);
+    return err0r?.call();
   }
 
   @override
@@ -884,12 +817,12 @@ class _$ErrorImpl with DiagnosticableTreeMixin implements _Error {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(AuthResponseModel model)? loaded,
-    TResult Function(String message)? error,
+    TResult Function(AuthResponseModel data)? loaded,
+    TResult Function()? err0r,
     required TResult orElse(),
   }) {
-    if (error != null) {
-      return error(message);
+    if (err0r != null) {
+      return err0r();
     }
     return orElse();
   }
@@ -900,9 +833,9 @@ class _$ErrorImpl with DiagnosticableTreeMixin implements _Error {
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
     required TResult Function(_Loaded value) loaded,
-    required TResult Function(_Error value) error,
+    required TResult Function(_Error value) err0r,
   }) {
-    return error(this);
+    return err0r(this);
   }
 
   @override
@@ -911,9 +844,9 @@ class _$ErrorImpl with DiagnosticableTreeMixin implements _Error {
     TResult? Function(_Initial value)? initial,
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Loaded value)? loaded,
-    TResult? Function(_Error value)? error,
+    TResult? Function(_Error value)? err0r,
   }) {
-    return error?.call(this);
+    return err0r?.call(this);
   }
 
   @override
@@ -922,21 +855,16 @@ class _$ErrorImpl with DiagnosticableTreeMixin implements _Error {
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
     TResult Function(_Loaded value)? loaded,
-    TResult Function(_Error value)? error,
+    TResult Function(_Error value)? err0r,
     required TResult orElse(),
   }) {
-    if (error != null) {
-      return error(this);
+    if (err0r != null) {
+      return err0r(this);
     }
     return orElse();
   }
 }
 
-abstract class _Error implements RegisterState {
-  const factory _Error(final String message) = _$ErrorImpl;
-
-  String get message;
-  @JsonKey(ignore: true)
-  _$$ErrorImplCopyWith<_$ErrorImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+abstract class _Error implements LoginState {
+  const factory _Error() = _$ErrorImpl;
 }
