@@ -11,7 +11,7 @@ part 'login_bloc.freezed.dart';
 
 class LoginBloc extends Bloc<LoginEvent, LoginState> {
   LoginBloc() : super(const _Initial()) {
-    on<_Login>((event, emit) async {
+    on<_login>((event, emit) async {
       emit(const _Loading());
       final result = await AuthRemoteDatasource().login(event.model);
       result.fold(
