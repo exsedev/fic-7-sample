@@ -33,18 +33,6 @@ class MyApp extends StatelessWidget {
         BlocProvider(
           create: (context) => LogoutBloc(),
         ),
-        BlocProvider(
-          create: (context) => ProductsBloc(),
-        ),
-        BlocProvider(
-          create: (context) => CategoriesBloc(),
-        ),
-        BlocProvider(
-          create: (context) => CheckoutBloc(),
-        ),
-        BlocProvider(
-          create: (context) => OrderBloc(),
-        ),
       ],
       child: MaterialApp(
           title: 'Flutter Demo',
