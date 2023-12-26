@@ -11,7 +11,7 @@ class BannerRemoteDatasource {
       'Content-Type': 'application/json',
     };
     final response = await http.get(
-      Uri.parse('${GlobalVariables.baseUrl}/api/banners'),
+      Uri.parse('${GlobarVariables.baseUrl}/api/banners'),
       headers: headers,
     );
 

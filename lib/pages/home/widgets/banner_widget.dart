@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shimmer/shimmer.dart';
 
-import '../../bloc/banners/banners_bloc.dart';
+import '../../../bloc/banners/banners_bloc.dart';
 import '../../utils/color_resources.dart';
 import '../../utils/images.dart';
 
