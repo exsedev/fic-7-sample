@@ -2,6 +2,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../models/auth_response_model.dart';
 
+
 class AuthLocalDatasource {
   Future<bool> saveAuthData(AuthResponseModel model) async {
     final SharedPreferences pref = await SharedPreferences.getInstance();
