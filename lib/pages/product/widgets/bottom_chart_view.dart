@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_fic7_app/bloc/Checkout/checkout_bloc.dart';
 
-import 'package:flutter_fic7_app/data/models/request/product_response_model.dart';
+import 'package:flutter_fic7_app/data/models/product_response_model.dart';
 
 import '../../base_widgets/show_custom_snackbar.dart';
 import '../../cart/cart_page.dart';
-import '../../utils/color_resource.dart';
+import '../../utils/color_resources.dart';
 import '../../utils/custom_themes.dart';
 import '../../utils/dimensions.dart';
 import '../../utils/images.dart';
@@ -76,6 +76,9 @@ class _BottomCartViewState extends State<BottomCartView> {
                     child: BlocBuilder<CheckoutBloc, CheckoutState>(
                       builder: (context, state) {
                         return state.map(
+                          loading: (value) {
+                            return const CircularProgressIndicator();
+                          },
                           loaded: (value) {
                             int totalQty = 0;
                             value.products.forEach((element) {
